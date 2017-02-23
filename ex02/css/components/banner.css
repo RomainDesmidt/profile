@@ -1,0 +1,25 @@
+.banner {
+          background-size: cover;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 800px;
+          height: 400px;
+          position: relative;
+}
+
+.banner-content {
+  color: white;
+  text-align: center;
+
+}
+
+
+.banner-content h1 {
+  text-transform: uppercase;
+}
+
+.banner-content a {
+  position: relative;
+  bottom: -20px;
+}
