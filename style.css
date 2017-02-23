@@ -77,17 +77,11 @@ li {
       padding-right: 5px;
 
 }
-
-.align-center {
-                /*text-align: right;*/
-}
-
-.p-center {
-            /*text-align: center;*/
-}
-
 #btn-red {
-            background: red
+            background: #C45850;
             color: white;
+            padding: 10px;
+            border-radius: 4px;
+            /*display: block;*/
 }
 
