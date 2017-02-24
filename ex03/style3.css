@@ -1,0 +1,10 @@
+div.wrapper-grey {
+  background: #f6f6f6;
+  background-size: cover !important;
+  color: black;
+  padding: 20px 10px;
+}
+.form-login .btn {
+  width: 100%;
+  line-height: 30px;
+}
