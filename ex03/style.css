@@ -19,3 +19,24 @@ i.fa-smile-o {
 .fa-smile-o:before {
   content: "\f118";
 }
+
+.span-bold {
+  font-weight: bolder;
+}
+
+.wrapper-blue {
+  background: #3079AB;
+  color: white;
+  padding: 2em 0;
+}
+.wrapper-grey {
+  background: #EDEFF0;
+  color: #4e4e4e;
+}
+.card-white {
+  background: white;
+  padding: 30px;
+  box-shadow: 1px 1px 2px #e7e7e7;
+  border-radius: 4px;
+  margin: 20px 50px;
+}
