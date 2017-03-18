@@ -1,0 +1,158 @@
+// var coord1 = new google.maps.LatLng(47.211905, -1.546881);
+// var coord2 = new google.maps.LatLng(47.213551, -1.548048);
+// var coord3 = new google.maps.LatLng(47.2153952, -1.5468317);
+// var hash2 = [
+//     {lat: 47.211905, lng: -1.546881},
+//     {lat: 47.213551, lng: -1.548048},
+//     {lat: 47.2153952, lng: -1.5468317}
+
+// ];
+
+// var hash2 = [coord1, coord2, coord3];
+
+var parcoursPath2 = new google.maps.Polyline({
+    path: coordinatesArray,
+    geodesic: true,
+    strokeColor: '#0000FF',
+    strokeOpacity: 1.0,
+    strokeWeight: 2
+  });
+
+  parcoursPath2.setMap(map);
+
+
+// marquePoi(47.211905, -1.546881, ico, titre, true);
+// marquePoi(47.211788,-1.5457677, ico, titre, true);
+// marquePoi(47.215184,-1.5495447, ico, titre, true);
+// marquePoi(47.213551, -1.548048, ico, titre, true);
+// marquePoi(47.2153952,-1.5468317, ico, titre, false);
+
+
+// var coordinatesArray = []
+// addToCoordinatesObjectArray(coordinatesArray, 47.211905, -1.546881);
+// addToCoordinatesObjectArray(coordinatesArray, 47.213551, -1.548048);
+// addToCoordinatesObjectArray(coordinatesArray, 47.2153952, -1.5468317);
+
+// var parcoursPath = new google.maps.Polyline({
+//     path: coordinatesArray,
+//     geodesic: true,
+//     strokeColor: '#0000FF',
+//     strokeOpacity: 1.0,
+//     strokeWeight: 2
+//   });
+
+//   parcoursPath.setMap(map);
+
+
+
+// var marker = new google.maps.Marker({
+//   position: myLatlng,
+//   map: map,
+//   title: "La Cordee",
+//   icon: ico
+// });
+
+//  marker.addListener('click', function() {
+//     infowindow.open(map, marker);
+//   });
+
+//add listener
+
+
+//end addListener
+
+// map.addListener(map, 'dragend', function (event) {
+// infowindow2.close();
+// });
+
+//init marker 2
+// var marker2 = new google.maps.Marker({
+//   position: myLatlng2,
+//   map: map,
+//   title: "No idea where i am",
+//   icon: ico
+// });
+
+
+// var marker3 = new google.maps.Marker({
+//   position: myLatlng3,
+//   map: map,
+//   title: "The fuck is this",
+//   icon: ico
+// });
+
+
+//var myLatlng4 = new google.maps.LatLng(47.211905, -1.546881);
+// var myLatlng4 = new google.maps.LatLng(47.213551, -1.548048);
+// var myLatlng5 = new google.maps.LatLng(47.2153952,-1.5468317);
+
+
+// var marker4 = new google.maps.Marker({
+//   position: myLatlng4,
+//   map: map,
+//   title: "No idea where i am",
+//   icon: ico
+// });
+
+
+// var marker5 = new google.maps.Marker({
+//   position: myLatlng5,
+//   map: map,
+//   title: "The fuck is this",
+//   icon: ico
+// });
+
+
+
+// var parcoursCoordinates2 = [
+//     {lat: 47.211905, lng: -1.546881},
+//     {lat: 47.213551, lng: -1.548048},
+//     {lat: 47.2153952, lng: -1.5468317}
+
+// ];
+
+// // Parcours
+// var parcoursCoordinates = [
+//     {lat: 47.211905, lng: -1.546881},
+//     {lat: 47.211788, lng: -1.5457677},
+//     {lat: 47.215184, lng: -1.5495447}
+
+//   ];
+//   var parcoursPath = new google.maps.Polyline({
+//     path: parcoursCoordinates,
+//     geodesic: true,
+//     strokeColor: '#FF0000',
+//     strokeOpacity: 1.0,
+//     strokeWeight: 2
+//   });
+
+// var parcoursPath2 = new google.maps.Polyline({
+//     path: parcoursCoordinates2,
+//     geodesic: true,
+//     strokeColor: '#0000FF',
+//     strokeOpacity: 1.0,
+//     strokeWeight: 2
+//   });
+
+//   parcoursPath.setMap(map);
+//   parcoursPath2.setMap(map);
+
+//to remove the parcours
+//parcoursPath.setMap(null);
+
+
+//init infowindow
+var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">La Cordee</h3>'+
+      '<div id="bodyContent"><br>'+
+      '<p><b>La Cordee</b>, is an ill place named after people that killed themselves in <b>shame</b><br>' +
+      '<b>Pokemon GO:</b> <br>you may catch an angry pokemon named Cecily<br> which have both the angry & motherlike properties,<br> might remind you how to close a door, multiple times' +
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+infowindow.open(map, marqueur);
